@@ -16,7 +16,7 @@ def about():
     return 'Inserir link para twitter, intagram...'
 
 @app.route('/como-obter-lat-lng')
-    return 'Énsinar as pessoas como obter a latitude e longitude do seu lugar preferido'
+    return 'Ensinar as pessoas como obter a latitude e longitude do seu lugar preferido'
 
 if __name__ == '__main__':
     app.run(debug=True)
