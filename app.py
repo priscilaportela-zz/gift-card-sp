@@ -3,19 +3,19 @@ from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def hello():
-    return render_template("index.html")
+    return render_template('index.html')
 
-@app.route("/formulario")
+@app.route('/formulario')
 def form():
-    return 'direcionar para link de formlulario para insercao de novos negócios'
+    return redirect('https://forms.gle/7KWhBWsm2nFJqMFA9', code=302)
 
-@app.route("/sobre nós")
+@app.route('/sobre')
 def about():
     return 'Inserir link para twitter, intagram...'
 
-@app.route("/como-obter-lat-lng")
+@app.route('/como-obter-lat-lng')
 def info():
     return redirect("https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=pt-BR", code=302)
 
