@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/formulario')
 def form():
-    return webbrowser.open_new_tab('https://forms.gle/7KWhBWsm2nFJqMFA9')
+    return redirect('https://forms.gle/7KWhBWsm2nFJqMFA9', code=302)
 
 @app.route('/sobre')
 def about():
@@ -18,7 +18,7 @@ def about():
 
 @app.route('/como-obter-lat-lng')
 def info():
-    return webbrowser.open_new_tab('https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=pt-BR')
+    return redirect('https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=pt-BR', code=302)
 
 if __name__ == '__main__':
     app.run(debug=True)
