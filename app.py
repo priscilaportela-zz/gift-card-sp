@@ -1,5 +1,5 @@
 # app.py
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ def about():
 
 @app.route("/como-obter-lat-lng")
 def info():
-    return 'Ensinar as pessoas como obter a latitude e longitude do seu lugar preferido'
+    return redirect("https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=pt-BR", code=302)
 
 if __name__ == '__main__':
     app.run(debug=True)
