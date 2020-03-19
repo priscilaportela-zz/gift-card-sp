@@ -8,14 +8,15 @@ def hello():
     return render_template("index.html")
 
 @app.route("/formulario")
-def shoelaces():
+def form():
     return 'direcionar para link de formlulario para insercao de novos negócios'
 
 @app.route("/sobre nós")
 def about():
     return 'Inserir link para twitter, intagram...'
 
-@app.route('/como-obter-lat-lng')
+@app.route("/como-obter-lat-lng")
+def info():
     return 'Ensinar as pessoas como obter a latitude e longitude do seu lugar preferido'
 
 if __name__ == '__main__':
